@@ -1,13 +1,13 @@
 *{
     box-sizing: border-box;
-  }
-  body{
+}
+body{
     height: 100vh;
     background: rgb(64, 16, 100);
     margin: 0;
     display: grid;
     place-items: center;
-  }
+}
   .container{
     background: white;
     border-radius: 10px;
