@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+  }
+  body{
+    height: 100vh;
+    background: rgb(64, 16, 100);
+    margin: 0;
+    display: grid;
+    place-items: center;
+  }
+  .container{
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    min-width: 400px;
+  
+    border: 1px solid black;
+  }
+  #newtask{
+    position: relative;
+    padding: 40px 20px;
+  }
+  #newtask input{
+    width: 75%;
+    height: 50px;
+    padding: 10px;
+    border: 2px solid grey;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    color: black;
+  }
+  #newtask input:focus{  
+    outline: none;
+    border-color: blue;
+  }
+  #newtask button{
+    width: 20%;
+    height: 50px;
+    outline: none;
+    font-size: 17px;
+    border-radius: 5px;
+    position: relative;
+    float: right;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(75, 19, 96);
+  }
+  .close{
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+    position: absolute;
+  }
+  .close:hover{
+    background-color: red;
+    color: white;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    transition: 0.5s;
+    border-radius: 5px;
+    border: 0.5px solid black;
+  }
+  ul li:nth-child(odd) {
+    background: lightblue;
+  }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  ul li.checked {
+    background: green;
+    color: white;
+    text-decoration: line-through;
+  }
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: white;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 15px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 8px;
+  }
+  
