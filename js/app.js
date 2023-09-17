@@ -52,6 +52,13 @@ function newItem() {
        var div = this.parentElement;
        div.style.display = "none";
 }
+   }
 }
-}
-       
+// Execute a function when a key on the keyboard is pressed
+var input =  document.getElementById("myInput"); 
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter"){
+    event.preventDefault();
+    document.getElementById("push").click();
+  }
+});     
